@@ -23,10 +23,10 @@ Estado representacional de transferência
 
 REST tem suas restrições, são elas:
 
-![Pasted image 20231105170601.png](image%2FPasted%20image%20231105170601.png)
+![Pasted image 20231105170601.png](image%2FPasted%20image%2020231105170601.png)
 
 Vantagens de utilizar o REST
-![Pasted image 20231105170830.png](image%2FPasted%20image%20231105171656.png)
+![Pasted image 20231105170830.png](image%2FPasted%20image%2020231105171656.png)
 
 
 <h4>Entendendo  Request e Response</h4>
@@ -35,10 +35,10 @@ Para entender o request, vamos pegar o exemplo de um uso diário que é a utiliz
 
 
 Represetando uma request:
-![Pasted image 20231105171823.png](image%2FPasted%20image%20231105171823.png)
+![Pasted image 20231105171823.png](image%2FPasted%20image%2020231105171823.png)
 
 Representando o response:
-![Pasted image 20231105171900.png](image%2FPasted%20image%20231105171900.png)
+![Pasted image 20231105171900.png](image%2FPasted%20image%2020231105171900.png)
 
 ##Os tipos de parâmetros usados no REST
 
@@ -47,7 +47,7 @@ Parâmetros que são passados pela URL e que são obrigatórios, caso não exist
 
 Exemplo
 
-![Pasted image 20231106075939.png](image%2FPasted%20image%20231106075939.png)
+![Pasted image 20231106075939.png](image%2FPasted%20image%2020231106075939.png)
 
 podemos entender nessa URL a existência de 3 parâmetros na busca de livros:
 1 - asc: Ordenação crescente do nome dos livros;
@@ -58,7 +58,7 @@ podemos entender nessa URL a existência de 3 parâmetros na busca de livros:
 
 Parâmetros passados por URL  mas não obrigatórios, então iniciamos a URL como já conhecido e colocamos um ponto de interrogação,  após a interrogação inserimos os parâmetros desejado
 
-![Pasted image 20231106080349.png](image%2FPasted%20image%20231106080349.png)
+![Pasted image 20231106080349.png](image%2FPasted%20image%2020231106080349.png)
 
 Entendendo os parâmetros, ficaria assim:
 - firstName=Clean: primeiro colocamos o nome do parâmetros, depois o sinal de atribuição e em seguida o valor.
