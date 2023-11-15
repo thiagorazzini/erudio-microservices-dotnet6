@@ -3,7 +3,7 @@ using System;
 
 namespace RestWithASPNETUdemy.Services.Implemetations
 {
-    public class PersonServiceImplemetation : IPersonService
+    public class PersonServiceImplementation : IPersonService
     {
         private volatile int count;
 
