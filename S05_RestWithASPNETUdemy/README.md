@@ -1,9 +1,9 @@
-##O que são werbservices ?
+## O que são werbservices ?
 
 
 Webservices são aplicações que compartilham informações entre outas e é hospedada em um servidor onde ela pode ser acessada através do protocolo HTTP. Os clientes que são mais comummente usados como meio de acesso com o protocolo HTTP são os browsers, mas também pode ser feita requisições através de um browser, de um client e até mesmo por linha de comando (powershell ou linux). 
 
-##Simplificando a explicação
+## Simplificando a explicação
 
 Webservices são somente legíveis por maquinas ou por outros sistemas, usando um exemplo do dia a dia:
 
@@ -11,14 +11,14 @@ Um carro corsa utiliza o filtro de ar do modelo A47b, então esse mesmo filtro p
 Imagine o desenvolvimento de uma aplicação webservice que faça a busca e validação do CPF, uma aplicação desktop pode usar essa aplicação para esse tipo de ação, da mesma forma que uma aplicação mobile pode fazer o mesmo. Tudo isso acontece utilizando o HTTP!
 
 
-##SOAP x REST
+## SOAP x REST
 Diferenças de protocolo entre elas:
  - SOAP utiliza o HTTP para fazer chamadas RPC trafegando XML
  - REST utiliza o HTTP para fazer as chamadas e suporta diferentes formatos de arquivo
 
 ![image](https://github.com/thiagorazzini/Microservices_dotNet/assets/30513646/9233702d-50a6-4140-ad47-545dcb765e2a)
 
-##O que é REST ?
+## O que é REST ?
 Estado representacional de transferência
 
 REST tem suas restrições, são elas:
@@ -29,7 +29,7 @@ Vantagens de utilizar o REST
 ![Pasted image 20231105170830.png](image%2FPasted%20image%2020231105171656.png)
 
 
-<h4>Entendendo  Request e Response</h4>
+** Entendendo  Request e Response
 Para entender o request, vamos pegar o exemplo de um uso diário que é a utilização do Chrome, quando  executamos o uso para acessar um site, realizamos  o HTTP request  e o servidor vai até a base de dados, faz a ação de acordo com o verbo http que foi realizado o request e devolve utilizando utilizando o HTTP response.
 ![Pasted image 20231105171656.png](image%2FPasted%20image%20231105171656.png)
 
@@ -42,7 +42,7 @@ Representando o response:
 
 ##Os tipos de parâmetros usados no REST
 
-**Paths params:
+** Paths params:
 Parâmetros que são passados pela URL e que são obrigatórios, caso não exista esses parâmetros será lançado uma exceção ou fará um operação similar mas que utiliza o mesmo verbo.
 
 Exemplo
@@ -54,7 +54,7 @@ podemos entender nessa URL a existência de 3 parâmetros na busca de livros:
 2 - 10: 10 itens por página;
 3 - 1: Index da página acessada
 
-**Query params:
+** Query params:
 
 Parâmetros passados por URL  mas não obrigatórios, então iniciamos a URL como já conhecido e colocamos um ponto de interrogação,  após a interrogação inserimos os parâmetros desejado
 
@@ -64,19 +64,19 @@ Entendendo os parâmetros, ficaria assim:
 - firstName=Clean: primeiro colocamos o nome do parâmetros, depois o sinal de atribuição e em seguida o valor.
 - Para colocar mais parâmetros, devemos inserir o & e repetir nome do parâmetro, sinal de atribuição "=" e o valor do parâmetro
 
-<h4>Header Params</h4>
+** Header Params
 São enviados no cabeçalho da requisição, eles não podem ser enviados via browser, devemos utilizar um client(postman), nele podemos colocar algumas keys como tipo de arquivo(Accept), Content-Type, Authorizathion.
 
 
 ![[Pasted image 20231106081056.png]]
 
-<h4>Parâmetros do body</h4>
+** Parâmetros do body
 São usados para envio de informações completas, podendo ser enviado via JSON e entre vários outros formatos aceito pela API REST  .
 
 Exemplo utilizando JSON:
 ![[Pasted image 20231106081226.png]]
 
-<h4>HTTP Status Code</h4>
+** HTTP Status Code
 Aqui podemos encontrar o retorno da ação realizada, para verificar o que aconteceu depois da demanda ser executada:
 
 São 5 tipos de status code:
@@ -94,7 +94,7 @@ Status code 4xx Erro do client:
 403: Client não tem autorização para aquele endpoint 
 404: Retornado quando o endpoint não é encontado
 
-<strong>HTTP Status Codes em Serviços REST</strong>
+** HTTP Status Codes em Serviços REST
 
 
 Destacando os mais vistos no dia a dia
