@@ -209,4 +209,4 @@ Se a arquitetura REST não estiver orientada ao hipertexto, não poderá ser con
 
 Podemos ver que nesse exemplo abaixo, tivemos um retorno do recurso com links dos endpoinsts para executar  proxima ação se desejar.
 
-![[Pasted image 20231108074449.png]]
+![Pasted image 20231108074449.png](image%2FPasted%20image%2020231108074449.png)
