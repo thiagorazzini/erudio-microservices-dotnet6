@@ -5,7 +5,7 @@ using RestWithASPNETUdemy.Services;
 namespace RestWithASPNETUdemy.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
         private readonly ILogger<PersonController> _logger;
@@ -30,7 +30,7 @@ namespace RestWithASPNETUdemy.Controllers
             if (person == null)
                 return NotFound();
 
-            return Ok();
+            return Ok(person);
         }
 
         [HttpPost]
@@ -51,13 +51,11 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(_personService.Create(person));
         }
 
-
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public IActionResult Delete()
         {
-            _personService.Delete(id);
+            _personService.Delete();
             return NoContent();
         }
-
     }
 }

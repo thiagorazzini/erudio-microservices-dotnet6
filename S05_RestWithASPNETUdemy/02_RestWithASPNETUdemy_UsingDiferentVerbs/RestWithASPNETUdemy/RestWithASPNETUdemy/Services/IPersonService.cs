@@ -8,6 +8,6 @@ namespace RestWithASPNETUdemy.Services
         Person FindById(long id);
         List<Person> FindAll();
         Person Update(Person person);
-        void Delete(long id);
+        void Delete();
     }
 }

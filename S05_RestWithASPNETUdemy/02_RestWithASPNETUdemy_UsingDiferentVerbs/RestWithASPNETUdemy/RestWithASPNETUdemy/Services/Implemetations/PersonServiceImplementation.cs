@@ -12,12 +12,11 @@ namespace RestWithASPNETUdemy.Services.Implemetations
             return person;
         }
 
-        public void Delete(long id)
+        public void Delete()
         {
-
         }
 
-        public List<Person> FindAll(long id)
+        public List<Person> FindAll()
         {
             List<Person> people = new List<Person>();
             for (int i = 0; i < 8; i++)
@@ -39,8 +38,6 @@ namespace RestWithASPNETUdemy.Services.Implemetations
                 Gender = "Male"
             };
         }
-
-
 
         public Person Update(Person person)
         {
