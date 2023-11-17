@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5a76f2cbe2456f24",
+        "id": "be58937f7682ae5a",
         "type": "tabs",
         "children": [
           {
-            "id": "4cc1f4ba78b7c59d",
+            "id": "0f2eea6c5b0dd1eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,13 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4cc1f4ba78b7c59d",
+  "active": "0f2eea6c5b0dd1eb",
   "lastOpenFiles": [
-    "Pasted image 20231117072944.png",
-    "S05_RestWithASPNETUdemy/README.md",
+    "S06_FirstMicrosservices/image/Pasted image 20231117080243.png",
+    "S06_FirstMicrosservices/image/Pasted image 20231117075450.png",
+    "S06_FirstMicrosservices/image/Pasted image 20231117075402.png",
+    "S06_FirstMicrosservices/image/Pasted image 20231117075332.png",
+    "Pasted image 20231117080243.png",
+    "Pasted image 20231117075450.png",
+    "Pasted image 20231117075402.png",
+    "Pasted image 20231117075332.png",
+    "S06_FirstMicrosservices/image/Pasted image 20231117074754.png",
     "README.md",
-    "image/Pasted image 20231108074449.png",
-    "image/Pasted image 20231108073520.png",
-    "README.md"
+    "S06_FirstMicrosservices/image",
+    "S06_FirstMicrosservices/image/Pasted image 20231117072944.png",
+    "S05_RestWithASPNETUdemy/README.md",
+    "image/Pasted image 20231108074449.png"
   ]
 }
