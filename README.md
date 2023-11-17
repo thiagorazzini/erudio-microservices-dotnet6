@@ -17,3 +17,12 @@ O microsserviço não é uma bala de prata, não é possível resolver todos os 
 Microsserviços não é uma novidade, existem muitas aplicações onde ocorre a execução em processos separados independentes e se comunicando entre si.
 
 
+## Entendendo como as aplicações monolíticas funcionam
+Aplicação de carrinho de compras monolítico:
+Usando  no formato de bolo em camadas, teríamos a conexão de banco de dados tradicional. Primeiro teríamos uma camada de DAO'S (Que seria o repository) se comunicando com o BD e lidando com a persistência, camada de serviços para os casos de uso e por fim uma camada de controller para gerenciar os acesso via clients ou web browsers.
+
+![[Pasted image 20231117072944.png]]
+
+- Na estrutura monolítica é um desenvolvimento  que teríamos  diferentes tipos de controllers para cada parte da aplicação.
+- A camada de serviços tenta modelar a  camada de casos de uso, onde é criado métodos de pesquisa, catalogo, feedback.
+- Camada DAO se assemelha com o modelo de dados, conforme está estruturada no modelo de banco de dados, temos objetos DAO para cada tabela. Portanto temos DAOS para cliente, cartão de crédito, Itens dentre outros
