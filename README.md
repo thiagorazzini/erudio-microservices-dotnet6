@@ -51,3 +51,29 @@ Os controllers não eram desenvolvidos para suportar novos clients.
 ![[Pasted image 20231117080243.png]]
 
 
+## Aplicações monolíticas
+- Um único executável da aplicação
+	- Fácil de compreender, mas difícil de assimilar(codigos diferentes para BD diferentes)
+	- Deve ser escrito em uma única linguagem(utilizando uma única linguagem, limitamos que será criado uma única tecnologia sendo que partes dos sistema poderiam ser criadas com outra tecnologia que se adequasse a necessidade);
+- **Modularização de acordo com linguagem ou framework;
+	-  Limitamos nossa aplicação ás estruturas da linguagem ( se a aplicação for em java, limitamos em pacotes, classes, jars, wars, functions, namespaces, frameworks etc);
+	- Vamos limitar também os serviços/tecnologias de armazenamento e serviços que estamos trabalhando
+	- Exemplificando a situação monolitica, vamos imaginar uma necessidade de associar a uma aplicação microsoft sharepoint, no caso do monolítico em Java, não será capaz de realizarmos essa modificação, pois não permite que desenvolvemos o sistema com outra tecnologia e nesse caso, seria necessário o desenvolvimento com o .Net
+
+- **Vantagens de um monolítico
+	- Fácil de compreender(não de assimilar)
+	- Fácil de testar como uma única unidade (até certo ponto);
+	- Fácil de implantar como uma única unidade.
+	- Fácil de gerenciar mudanças (até certo ponto);
+	- Fácil de gerenciar mudanças(até certo ponto);
+	- Fácil de escalar(se tomarmos os devidos cuidados,);
+	- Complexidade gerenciada de acordo com as estruturas da linguagem.
+- **Desvantagens
+	- Preso em uma linguagem
+		- A Aplicação estará presa em uma única stack, sem liberdade alguma para experimentar novas tecnologias
+	- Assimilação
+		- Um único desenvolvedor não consegue assimilar uma grande base de código
+		- Uma única equipe não pode gerenciar uma única aplicação grande( Regra das 2 pizzas da amazon)
+	- **Implantação como unidade única
+		- Sem possibilidade de implantar novas features de forma independente
+		- As mudanças são reféns de outas mudanças
