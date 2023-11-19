@@ -77,3 +77,47 @@ Os controllers não eram desenvolvidos para suportar novos clients.
 	- **Implantação como unidade única
 		- Sem possibilidade de implantar novas features de forma independente
 		- As mudanças são reféns de outas mudanças
+## Entendendo uma arquitetura de microsserviço
+
+Microserviços são sistemas pequenos e independentes criadas para áreas funcionais e individuais do sistema, quando precisam se comunicar entre sí, eles fazem isso através de protocolos abertos.
+
+Como são relativamente pequenos, eles se conectam com 1 ou mais tecnologias de persistência e usam a linguagem e base de dados mais adequados para a regra de negocio
+
+No atual senário, temos diversos dispositivos que trabalham como client e precisam consumir nossos servirços, pode gerar diversos problemas de comuniocação
+
+Normalmente para lidar com esse problema, temos o API Gateway, ele serve para facilitar as interfaces para serem consumidas pelo client e lidar com toda a complexidade apresentanda pelo consumo de API do lado do servidor
+API Gateway  pode lidar tbm com caches, autenticação entre outros.
+
+ ![[Pasted image 20231118181958.png]]
+## Componentização por meio de serviços
+
+Quando desenvolvemos uma aplicação com serviços separados e sem usar a estrutura de uma linguagem especificas, criamos aplicações independentes ou pequenas aplicações que podem ser implantadas independentemente.
+
+Quando quebramos uma aplicação dessa, devemos ser cautelosos e disciplinados na hora de estruturar suas interface, não podemos negligenciar e colocar tudo em uma única aplicação.  Além disso, qualquer alteração na aplicação, devemos ter como escopo o serviço afetado. 
+![[Pasted image 20231119100630.png]]
+
+Exemplificando: Quando queremos realizar uma alteração no escopo de Payment, não deveriamos estar preocupado se a alteração de Catalog esteja pronta, não precisamos nos preocupar com branchs, versões, feature toggles entre outros.
+
+
+Como microsserviços são independentes e são implantados independente de outros serviços, cada serviço pode ser implementado com outras linguagens ou frameworks.
+
+Microsserviços se comunicam através de protocolos abertos, bem como HTTP, UDP, TCP além das tecnologias de mensageria como AMQP, RABBITMQ. Os content types sãoo abertos e podemos usar o JSON, XML, Google Protocol buffers ou qualquer tecnologia interessante.
+
+## Objetivo principal dos microsserviços
+
+O intuito de microsserviços é encapsular  funcionalidades de negocios,  diferente das aplicações monolíticas onde encapsulamos funcionalidades técnicas(separada em camadas: DAO, Repository, Controller) e em microsserviços fatiamos a camada da aplicação em funcionalidade ou regra de negocio.
+Tudo relacionado em pesquisa, vai para o serviço de pesquisa, tudo relacionado a carrinho, vai para o serviço de carrinho e ainda podemos ter serviços puramente técnico, como por exemplo o serviço de e-mail. Nos microsserviços  podemos ter os DAOS e CONTROLLERS dentro do microsserviço.
+
+
+A ênfase dos microsserviços é a separação em serviços independentes de acordo com  as regras de negócios, e isso é perceptível quando olhamos para o serviço e enxergamos que ele está focado em uma pequena ou em uma microparte da operação.
+![[Pasted image 20231119102246.png]]
+Olhando para a imagem acima, podemos enxergar que o carrinho tem suas próprias operações e se colocarmos um checkout, teríamos um microsserviço somente para as operações de checkout
+
+- Microsserviços são de fácil gerenciamento, compreensão e o desenvolvedor que entrar no primeiro dia, já pode realizar operações no código
+- Um time pequeno ou um time de um homem só, pode realizar diversas operações no código, como por exemplo: refatorar, testar e até mesmo reescrever o microsserviço com uma tecnologia diferente.
+- De Ponto de vista de equipes tem mais flexibilidade, por exemplo: uma equipe  que faz os códigos de pesquisa, tem uma atenção mais focada e então trabalha só nele, já o time de reviews e carrinho o trabalho é menor, então essa equipe divide a atenção em dois serviços.
+![[Pasted image 20231119103348.png]]
+
+## Governança Descentralizada
+- Podemos realizar o desenvolvimento do  serviço em linguagem diferente, velocidades de desenvolvimento e implantação em fases ou ritmos diferentes;
+- Devemos respeitar alguns principios, como Tolerant Readers, que é relativar a reseliencia com os serviços que o consomem.
