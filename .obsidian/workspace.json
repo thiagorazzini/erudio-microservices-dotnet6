@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "be58937f7682ae5a",
+        "id": "7695551bb83433d4",
         "type": "tabs",
         "children": [
           {
-            "id": "0f2eea6c5b0dd1eb",
+            "id": "323ed8614f2f7b0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f2eea6c5b0dd1eb",
+  "active": "323ed8614f2f7b0c",
   "lastOpenFiles": [
+    "S06_FirstMicrosservices/README.md",
+    "README.md",
     "S06_FirstMicrosservices/image/Pasted image 20231119103348.png",
     "S06_FirstMicrosservices/image/Pasted image 20231119102246.png",
     "S06_FirstMicrosservices/image/Pasted image 20231119100630.png",
@@ -158,8 +152,6 @@
     "Pasted image 20231118181958.png",
     "S06_FirstMicrosservices/image/Pasted image 20231117080243.png",
     "S06_FirstMicrosservices/image/Pasted image 20231117075450.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231117075402.png",
-    "README.md",
     "S06_FirstMicrosservices/image",
     "S05_RestWithASPNETUdemy/README.md"
   ]
