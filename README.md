@@ -120,14 +120,49 @@ Olhando para a imagem acima, podemos enxergar que o carrinho tem suas próprias 
 
 ## Governança Descentralizada
 - Podemos realizar o desenvolvimento do  serviço em linguagem diferente, velocidades de desenvolvimento e implantação em fases ou ritmos diferentes;
-- Devemos respeitar alguns princípios, como Tolerant Readers(Relativamente resiliente as mudanças do serviço que consomem, portanto, caso um novo atributo for adicionado num objeto json, não se deve causar uma falha) por outro lado, devemos tratar a exposição de interfaces por qualquer serviço como um contrato escrito com as necessidades do consumers e com isso devemos pensar como será consumido e como vai afeta-los
+- Devemos respeitar alguns princípios, como Tolerant Readers(Relativamente resiliente as mudanças do serviço que consomem, portanto, caso um novo atributo for adicionado num objeto JSON, não se deve causar uma falha) por outro lado, devemos tratar a exposição de interfaces por qualquer serviço como um contrato escrito com as necessidades do consumers e com isso devemos pensar como será consumido e como vai afeta-los
 - Os serviços não ser orquestrados, mas sim coreografados 
 	- Imaginando um trafego de carros, temos  regras e sinalizadores para os carros não baterem, como por exemplo: semáforo, placas e faixas pintada no chão como pare, pedestre, de a preferência  entre outros
-	- Ja com os pedestres, notamos uma coreográfia, onde vemos os pedestres regulando a velocidade da passada, parando conforma  necessidade entre outros.
+	- Já com os pedestres, notamos uma coreografia, onde vemos os pedestres regulando a velocidade da passada, parando conforma  necessidade entre outros.
 - Nossos microssistemas individuais devem se comportar como um pedestre
 
 
 ## Persistência Poliglota
 
 É a liberdade para usar a ferramenta mais adequada para cada serviço (depende de como está distribuído as responsabilidades da organização )
-- Em algumas organizações, DBA'S não gostam desse modo de trabalho, porque preferem ter mais controle do que está sendo realizado e com isso optam por centralizar em uma unica fonte de dados relacional
+- Em algumas organizações, DBA'S não gostam desse modo de trabalho, porque preferem ter mais controle do que está sendo realizado e com isso optam por centralizar em uma única fonte de dados relacional.
+
+# Vantagens dos Microsserviços
+
+- Cada serviço é mais fácil de entender e assimilar, porém mais complexo de compreender como o todo.
+- Fácil de testar, implantar, gerenciar, verssionar e escalar serviços unicos e isso se torna uma grande vantagem.
+- Mudanças em ciclo desacomplado (Podem ser implantados sem necessidade de esperar outras alterações de outros serviços)
+- É mais facil de escalar os times de desenvolvimento;
+- Temos liberdade de experimentar novas linguagens ou frameworks
+
+# Desafios dos Microsserviços
+
+- A complexidade não foi extinta, ela apenas foi movida para fora da aplicação e distribuída entre os microsserviços;
+- Serviços eventualmente indisponível
+	- Aplicações monoliticas não se preocupa com isso, mas em um microsserviço, precisamos realizar a projeção de falhas;
+	- Necessidade de monitoramento (necessidade de acostumar com ferramentas de monitoramento disponivel);
+- Chamadas remotas são mais caras em termos de recurso e latência
+- Na maioria dos casos, transações são inexistentes nas arquiteturas de microsserviços, pois as operações são distribuídas;
+- Features engloba vários serviços 
+- A gestão da mudança torna-se um desafio diferente;
+	- Necessidade de considerar a interação entre os serviços;
+	- Gerenciar a dependência/Versão
+- O refactory irá depender dos Module Boundaries
+- 
+
+## Falácias da computação distribuída
+
+1. A rede é confiável
+2. Latência é zero
+3. Largura de banda infinita
+4. A rede é segura
+5. A topologia não muda
+6. Existe um adm
+7. Custo de transporte é zero
+8. A refe é homogênea
+9. 
