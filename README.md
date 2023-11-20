@@ -189,3 +189,13 @@ Os microsserviços consideram o Principio Single Responsibility Principle como s
 	- Exegerado - > Constituição federal de 2021 - 32888 páginas
 - Ser pequenos segredos, no máximo ter a quantidade de dezenas e não centenas de segredos
 - Previsível, fácil de experimentar.
+
+# Diferenças entre Microsserviços e SOA
+
+- SOA trata da integração entre sistemas e os sistemas e os Microsserviços trata-se de uma arquitetura de uma aplicação individual
+- SOA é orientado a uma orquestração (como funciona os automoveis na sociedade) 
+	- Microsserviços conta com componentes coreografados e governança descentralizada
+-  SOA Depende de tecnologia de integração inteligente e seus serviços burros
+	- Microsserviços contam com serviços inteligentes e tecnologia de integração burra;
+
+
