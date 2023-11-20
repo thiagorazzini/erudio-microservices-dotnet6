@@ -164,5 +164,28 @@ Olhando para a imagem acima, podemos enxergar que o carrinho tem suas próprias 
 5. A topologia não muda
 6. Existe um adm
 7. Custo de transporte é zero
-8. A refe é homogênea
-9. 
+8. A rede é homogênea
+
+# Como quebrar uma aplicação monolítica em Microsserviços
+
+**Principal ponto de consideração é a funcionalidade de negócios
+Organização deve ser feita como:
+- Substantivo(catalog, cart, customer);
+- Verbo(search, checkout, shipping);
+
+
+Os microsserviços consideram o Principio Single Responsibility Principle como separação dos serviços, como por exemplo: carrinho de compras serve apenas para guardar os itens que quero comprar, catalogo serve apenas para listar os itens a venda.
+
+- Principio do contexto limitado (Bounded Context) -> Originário do domain drive design
+	- Pega um grande contexto e divide em contextos exlusivos onde os dados parecem estar duplicados em contexto
+# O quão micro é Micro ?
+
+**O tamanho não é o fator determinante
+- Deve ser pequeno o suficiente para um desenvolvedor individual assimilar
+- Pequeno o suficiente para ser construído e gerenciado por um time pequeno 
+- Documentação pequena o suficiente para ler e entender
+	- Exemplos:
+	- Razoável -> Estatuto do idoso  edição de 2018 -56 páginas
+	- Exegerado - > Constituição federal de 2021 - 32888 páginas
+- Ser pequenos segredos, no máximo ter a quantidade de dezenas e não centenas de segredos
+- Previsível, fácil de experimentar.
