@@ -120,4 +120,14 @@ Olhando para a imagem acima, podemos enxergar que o carrinho tem suas próprias 
 
 ## Governança Descentralizada
 - Podemos realizar o desenvolvimento do  serviço em linguagem diferente, velocidades de desenvolvimento e implantação em fases ou ritmos diferentes;
-- Devemos respeitar alguns principios, como Tolerant Readers, que é relativar a reseliencia com os serviços que o consomem.
+- Devemos respeitar alguns princípios, como Tolerant Readers(Relativamente resiliente as mudanças do serviço que consomem, portanto, caso um novo atributo for adicionado num objeto json, não se deve causar uma falha) por outro lado, devemos tratar a exposição de interfaces por qualquer serviço como um contrato escrito com as necessidades do consumers e com isso devemos pensar como será consumido e como vai afeta-los
+- Os serviços não ser orquestrados, mas sim coreografados 
+	- Imaginando um trafego de carros, temos  regras e sinalizadores para os carros não baterem, como por exemplo: semáforo, placas e faixas pintada no chão como pare, pedestre, de a preferência  entre outros
+	- Ja com os pedestres, notamos uma coreográfia, onde vemos os pedestres regulando a velocidade da passada, parando conforma  necessidade entre outros.
+- Nossos microssistemas individuais devem se comportar como um pedestre
+
+
+## Persistência Poliglota
+
+É a liberdade para usar a ferramenta mais adequada para cada serviço (depende de como está distribuído as responsabilidades da organização )
+- Em algumas organizações, DBA'S não gostam desse modo de trabalho, porque preferem ter mais controle do que está sendo realizado e com isso optam por centralizar em uma unica fonte de dados relacional
