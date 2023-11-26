@@ -1,39 +1,48 @@
 {
   "main": {
-    "id": "c3e8e1643d4903f3",
+    "id": "518fd22593b9d7c3",
     "type": "split",
     "children": [
       {
-        "id": "7695551bb83433d4",
+        "id": "1abbecee2db53fdf",
         "type": "tabs",
         "children": [
           {
-            "id": "323ed8614f2f7b0c",
+            "id": "056795141999f598",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "8b4c936772f2f3ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S07_First_Microsservices/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "fcf6330e6a18129a",
+    "id": "66928b8be3133b09",
     "type": "split",
     "children": [
       {
-        "id": "ffa7a1baad3ca357",
+        "id": "d624aef0293849d5",
         "type": "tabs",
         "children": [
           {
-            "id": "52016f88c27c03c8",
+            "id": "6a80916ec2dda254",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +52,7 @@
             }
           },
           {
-            "id": "fd0db6c8d41ed639",
+            "id": "1a71b5b329efa993",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +67,7 @@
             }
           },
           {
-            "id": "d7fbc0f4f8de5007",
+            "id": "619511163728d203",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "89763cd1c9354fab",
+    "id": "59556b2aba51076a",
     "type": "split",
     "children": [
       {
-        "id": "29efaeca07c42521",
+        "id": "926ce0845cdee5b8",
         "type": "tabs",
         "children": [
           {
-            "id": "186227759261e42f",
+            "id": "db971e4769d4e993",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S07_First_Microsservices/README.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +106,19 @@
             }
           },
           {
-            "id": "5a29a43f57b403bf",
+            "id": "d6fbf972934a0375",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S07_First_Microsservices/README.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "558ec3e98dea980f",
+            "id": "2c4cf39b47acbe3d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +129,12 @@
             }
           },
           {
-            "id": "106d9a0a43ea9dd8",
+            "id": "5cf0969e3db36348",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "S07_First_Microsservices/README.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,21 +155,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "323ed8614f2f7b0c",
+  "active": "8b4c936772f2f3ef",
   "lastOpenFiles": [
-    "S05_RestWithASPNETUdemy/README.md",
-    "S06_FirstMicrosservices/README.md",
-    "README.md",
-    "S06_FirstMicrosservices/image/Pasted image 20231119103348.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231119102246.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231119100630.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231118181958.png",
-    "Pasted image 20231119103348.png",
-    "Pasted image 20231119102246.png",
-    "Pasted image 20231119100630.png",
-    "Pasted image 20231118181958.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231117080243.png",
-    "S06_FirstMicrosservices/image/Pasted image 20231117075450.png",
-    "S06_FirstMicrosservices/image"
+    "README.md"
   ]
 }
