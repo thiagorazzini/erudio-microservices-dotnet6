@@ -1,8 +1,8 @@
-﻿using GeekShopping.Product.API.Model.Base;
+﻿using GeekShopping.ProductAPI.Model.Base;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeekShopping.Product.API.Model
+namespace GeekShopping.ProductAPI.Model
 {
     [Table("product")]
     public class Product : BaseEntity
@@ -16,12 +16,12 @@ namespace GeekShopping.Product.API.Model
         [Range(1, 10000)]
         public decimal Price { get; set; }
 
-        [Column ("description")]
+        [Column("description")]
         [StringLength(500)]
         public string Description { get; set; }
 
         [Column("category_name")]
-        [StringLength (50)]
+        [StringLength(50)]
         public string CategoryName { get; set; }
 
         [Column("image_url")]
